@@ -1,0 +1,84 @@
+.wrapper {
+    &.header {
+        padding-top: 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 97.5%;
+            margin: 0 auto;
+            background-color: #BABBC5;
+        }
+
+        .logo-container {
+            padding-left: 3%;
+            width: 26.5%;
+        }
+
+        nav {
+            width: 73%;
+            padding-right: 1.5%;
+
+            .nav-list {
+                display: flex;
+                position: relative;
+                padding-right: 4%;
+                width: 670px;
+
+                &__item {
+
+                    .nav-list__item-link {
+                        @extend %h6;
+                        display: block;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding: 34px 0;
+                        color: white;
+                        width: 134px;
+                        position: relative;
+
+                        &:hover::after {
+                            content: "";
+                            height: 3px;
+                            width: 134px;
+                            background-color: #BABBC5;
+                            display: block;
+                            margin: 0 auto;
+                            position: absolute;
+                            bottom: -11;
+                        }
+
+                        &:active {
+                            color: #E71414;
+
+                            &::after {
+                                content: "";
+                                height: 3px;
+                                width: 134px;
+                                background-color: #E71414;
+                                display: block;
+                                margin: 0 auto;
+                                position: absolute;
+                                bottom: -11;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+
+}
+
+@media (max-width: 970px) {
+        
+}

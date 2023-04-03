@@ -1,0 +1,60 @@
+.wrapper.team {
+
+    .team-list {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        gap: 30px;
+
+        &__item {
+
+            &-img{
+                width: 100%;
+
+                &__elem{
+                    width: 100%;
+                }
+            }
+
+            &-name {
+                @extend %h4;
+                font-weight: 700;
+                padding: 30px 0 5.29px 0;
+                color: #2D3033;
+            }
+
+            &-profession {
+                @extend %h5;
+                color: #FF4343;
+                padding-bottom: 17.86px;
+                text-transform: uppercase;
+            }
+
+            &-descr {
+                @extend %h5;
+                color: #6C7279;
+            }
+
+            &-socmedia {
+                padding-top: 37.86px;
+                width: 129px;
+                display: grid;
+                grid-template-columns: repeat(3, 39px);
+                gap: 6px;
+
+                .icon-svg{
+                    display: flex;
+                    transition: .3s;
+
+                    &:hover{
+                        transform: scale(0.9) ;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+        
+}

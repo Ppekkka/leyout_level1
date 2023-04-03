@@ -1,0 +1,34 @@
+.wrapper.features {
+    padding-top: 127.07px;
+
+    .features-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 100px 30px;
+
+        .feature {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-title {
+                @extend %h4;
+                color: #2D3033;
+                padding: 41px 0 20.43px 0;
+            }
+
+            &-description {
+                @extend %h5;
+                text-align: center;
+                color: #6C7279;
+                width: 97%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+        
+}
