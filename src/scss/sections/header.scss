@@ -8,63 +8,63 @@
         &::after {
             content: "";
             height: 1px;
-            width: 97.5%;
+            width: 100%;
             margin: 0 auto;
             background-color: #BABBC5;
         }
 
         .logo-container {
-            padding-left: 3%;
             width: 26.5%;
         }
 
         nav {
-            width: 73%;
-            padding-right: 1.5%;
+            width: max-content;
 
             .nav-list {
                 display: flex;
                 position: relative;
-                padding-right: 4%;
-                width: 670px;
+                width: max-content;
 
                 &__item {
+                    width: 134px;
 
-                    .nav-list__item-link {
+                    &:hover::after {
+                        content: "";
+                        height: 3px;
+                        width: 134px;
+                        background-color: #BABBC5;
+                        display: block;
+                        position: absolute;
+                        bottom: -9px;
+                    }
+
+
+
+                    &:active:after {
+                        content: "";
+                        height: 3px;
+                        width: 134px;
+                        background-color: #E71414;
+                        display: block;
+                        position: absolute;
+                        bottom: -9px;
+                    }
+
+                    &-link {
                         @extend %h6;
                         display: block;
                         text-align: center;
                         text-transform: uppercase;
                         padding: 34px 0;
                         color: white;
-                        width: 134px;
                         position: relative;
+                        white-space: nowrap;
 
-                        &:hover::after {
-                            content: "";
-                            height: 3px;
-                            width: 134px;
-                            background-color: #BABBC5;
-                            display: block;
-                            margin: 0 auto;
-                            position: absolute;
-                            bottom: -11;
-                        }
 
                         &:active {
                             color: #E71414;
-
-                            &::after {
-                                content: "";
-                                height: 3px;
-                                width: 134px;
-                                background-color: #E71414;
-                                display: block;
-                                margin: 0 auto;
-                                position: absolute;
-                                bottom: -11;
-                            }
                         }
+
                     }
                 }
             }
@@ -79,6 +79,16 @@ header {
 
 }
 
-@media (max-width: 970px) {
-        
+@media (max-width: 1200px) {
+    .wrapper.header nav .nav-list__item-link {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 34px 21px;
+    }
+}
+
+@media (max-width: 950px){
+    .wrapper.header nav .nav-list__item{
+        width: 108px;
+    }
 }
