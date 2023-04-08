@@ -29,6 +29,10 @@
 
 }
 
-@media (max-width: 1200px) {
-        
+@media (max-width: 768px){
+    .main-wrapper{
+        .button{
+            margin-bottom: 52px;
+        }
+    }
 }

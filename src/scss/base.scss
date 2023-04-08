@@ -28,3 +28,10 @@ header,
 .main-section {
     background: linear-gradient(0deg, rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url('../assets/bg-img.png') no-repeat fixed center;
 }
+
+@media (max-width: 768px){
+    .wrapper{
+        width: 87.5%;
+        padding-top: 50px;
+    }
+}

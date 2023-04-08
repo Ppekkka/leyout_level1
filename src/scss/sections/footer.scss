@@ -20,6 +20,7 @@
                 font-weight: 700;
                 color: white;
                 padding-bottom: 30px;
+                text-align: center;
             }
 
             &-descr {
@@ -68,6 +69,22 @@
     }
 }
 
-@media (max-width: 1200px) {
-        
+@media (max-width: 768px){
+    .wrapper.footer{
+        .footer-main{
+            display: flex;
+            flex-direction: column;
+
+            &__elem{
+
+                &-descr{
+                    padding-bottom: 69.5px;
+                }
+
+                &-socmedia{
+                    padding-bottom: 59px;
+                }
+            }
+        }
+    }
 }

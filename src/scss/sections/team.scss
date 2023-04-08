@@ -62,3 +62,24 @@
         gap: 24.5px;
     }
 }
+
+@media (max-width: 768px){
+    .wrapper.team{
+        padding-top: 35px;
+
+        .team-list{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+
+            &__item{
+                &-name{
+                    padding-bottom: 12px;
+                }
+    
+                &-profession{
+                    height: max-content;
+                }
+            }
+        }
+    }
+}
