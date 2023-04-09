@@ -122,7 +122,7 @@ header {
             nav {
 
                 .nav-list {
-                    background: linear-gradient(0deg, rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url('../assets/bg-img.png') no-repeat fixed center;
+                    background: linear-gradient(0deg, rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url('../assets/bg-img.png') no-repeat fixed bottom;
                     display: grid;
                     position: absolute;
                     width: 100%;
@@ -146,15 +146,15 @@ header {
 
             nav .navbar-toggler {
                 display: grid;
-                height: 30px;
+                height: 18px;
                 cursor: pointer;
                 margin-right: 45px;
 
                 .bar {
                     background-color: white;
-                    width: 40px;
-                    height: 6px;
-                    margin-bottom: 10px;
+                    width: 24px;
+                    height: 3.6px;
+                    margin-bottom: 3.6px;
                     transition: .4s;
 
                 }
