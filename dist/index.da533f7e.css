@@ -705,7 +705,7 @@ header {
   background: #353c65;
   grid-template-columns: repeat(3, 32%);
   justify-content: center;
-  padding-top: 71.14px;
+  padding: 71.14px 0 67.14px;
   display: grid;
 }
 

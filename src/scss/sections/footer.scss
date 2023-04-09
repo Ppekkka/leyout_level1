@@ -7,8 +7,8 @@
         display: grid;
         grid-template-columns: repeat(3, 32%);
         background: #353C65;
-        padding-top: 71.14px;
         justify-content: center;
+        padding: 71.14px 0 67.14px 0;
 
         &__elem {
             display: flex;
