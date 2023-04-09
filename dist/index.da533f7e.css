@@ -305,6 +305,7 @@ header {
   }
 
   .wrapper.header input:checked ~ nav .nav-list {
+    padding-bottom: 178px;
     transform: translateY(101px);
   }
 

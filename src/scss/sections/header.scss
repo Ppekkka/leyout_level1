@@ -162,6 +162,7 @@ header {
 
             input:checked~nav .nav-list {
                 transform: translateY(101px);
+                padding-bottom: 178px;
             }
 
             input:checked~nav .navbar-toggler {
